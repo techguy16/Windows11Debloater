@@ -72,6 +72,12 @@ $global:Bloatware = @(
     "Microsoft.XboxSpeechToTextOverlay"
     "Microsoft.ZuneMusic"
     "Microsoft.ZuneVideo"
+    "Microsoft.Xbox.TCUI"                       # Issue 25, 91  Many home users want to play games
+    "Microsoft.XboxApp"
+    "Microsoft.XboxGameOverlay"
+    "Microsoft.XboxGamingOverlay"               # Issue 25, 91  Many home users want to play games
+    "Microsoft.XboxIdentityProvider"            # Issue 25, 91  Many home users want to play games
+    "Microsoft.XboxSpeechToTextOverlay"
 
     #Sponsored Windows 10 AppX Apps
     #Add sponsored/featured apps to remove in the "*AppName*" format
@@ -84,6 +90,8 @@ $global:Bloatware = @(
     "BubbleWitch3Saga"
     "Wunderlist"
     "Flipboard"
+    "TikTok"
+    "Instagram"
     "Twitter"
     "Facebook"
     "Spotify"                                           # Issue 123
@@ -105,12 +113,6 @@ $global:WhiteListedApps = @(
     "Microsoft.WindowsStore"                    # Issue 1
     "Microsoft.Windows.Photos"                  # Microsoft disabled/hid legacy photo viewer
     "CanonicalGroupLimited.UbuntuonWindows"     # Issue 10
-    "Microsoft.Xbox.TCUI"                       # Issue 25, 91  Many home users want to play games
-    "Microsoft.XboxApp"
-    "Microsoft.XboxGameOverlay"
-    "Microsoft.XboxGamingOverlay"               # Issue 25, 91  Many home users want to play games
-    "Microsoft.XboxIdentityProvider"            # Issue 25, 91  Many home users want to play games
-    "Microsoft.XboxSpeechToTextOverlay"
     "Microsoft.MicrosoftStickyNotes"            # Issue 33  New functionality.
     "Microsoft.MSPaint"                         # Issue 32  This is Paint3D, legacy paint still exists in Windows 10
     "Microsoft.WindowsCamera"                   # Issue 65  New functionality.
@@ -259,7 +261,7 @@ $OtherPanel.Anchor               = 'top,right,left'
 $OtherPanel.location             = New-Object System.Drawing.Point(10,400)
 
 $Debloat                         = New-Object system.Windows.Forms.Label
-$Debloat.text                    = "DEBLOAT OPTIONS"
+$Debloat.text                    = "DEBLOATING OPTIONS"
 $Debloat.AutoSize                = $true
 $Debloat.width                   = 457
 $Debloat.height                  = 142
